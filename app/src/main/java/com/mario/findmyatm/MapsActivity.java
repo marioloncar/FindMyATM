@@ -62,9 +62,13 @@ public class MapsActivity extends AppCompatActivity {
 
         assert getSupportActionBar() != null;
 
-        mBankNames = getResources().getStringArray(com.mario.findmyatm.R.array.banks_array); //imena banaka
+        //get bank names from String.xml
+        mBankNames = getResources().getStringArray(com.mario.findmyatm.R.array.banks_array);
+        //navigation drawer
         mDrawerLayout = (DrawerLayout) findViewById(com.mario.findmyatm.R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(com.mario.findmyatm.R.id.left_drawer);
+
+        //ActionBar title
         mTitle = getTitle();
 
         // Set the adapter for the list view
@@ -120,7 +124,7 @@ public class MapsActivity extends AppCompatActivity {
         setTitle(mBankNames[position]);
         mDrawerLayout.closeDrawer(mDrawerList);
         switch (position) {
-            case 0:
+            case 0: //Banco Popolare
                 mMap.clear();
                 LatLng camera_banco = new LatLng(45.326666, 14.444808);
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera_banco, 17));
@@ -140,7 +144,7 @@ public class MapsActivity extends AppCompatActivity {
                 banco.bancoPopolare();
                 break;
 
-            case 1:
+            case 1: //BKS
                 mMap.clear();
                 LatLng camera_bks = new LatLng(45.326806, 14.444040);
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera_bks, 17));
@@ -148,7 +152,7 @@ public class MapsActivity extends AppCompatActivity {
                 bksBank.bks();
                 break;
 
-            case 2:
+            case 2: //Croatia banka
                 mMap.clear();
                 LatLng camera_cro = new LatLng(45.325389, 14.442115);
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera_cro, 17));
@@ -156,28 +160,28 @@ public class MapsActivity extends AppCompatActivity {
                 croatiaBank.croatia();
                 break;
 
-            case 3:
+            case 3: //Erste bank
                 mMap.clear();
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(rijeka, 14));
                 Banks ersteBank = new Banks();
                 ersteBank.erste();
                 break;
 
-            case 4:
+            case 4: //Postanska banka
                 mMap.clear();
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(rijeka, 14));
                 Banks postanska = new Banks();
                 postanska.hpb();
                 break;
 
-            case 5:
+            case 5: //Hypo Alpe Adria Bank
                 mMap.clear();
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(rijeka, 14));
                 Banks hypoAlpe = new Banks();
                 hypoAlpe.hypo();
                 break;
 
-            case 6:
+            case 6: //Imex bank
                 mMap.clear();
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(rijeka, 14));
                 AlertDialog.Builder builderImex = new AlertDialog.Builder(this);
@@ -195,7 +199,7 @@ public class MapsActivity extends AppCompatActivity {
                 dialogImex.show();
                 break;
 
-            case 7:
+            case 7: //Istarska Kreditna Banka
                 mMap.clear();
                 LatLng camera_ikb = new LatLng(45.326305, 14.444366);
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera_ikb, 17));
@@ -203,7 +207,7 @@ public class MapsActivity extends AppCompatActivity {
                 istarska.ikb();
                 break;
 
-            case 8:
+            case 8: //Karlovačka banka
                 mMap.clear();
                 LatLng camera_kar = new LatLng(45.329878, 14.438692);
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera_kar, 17));
@@ -211,7 +215,7 @@ public class MapsActivity extends AppCompatActivity {
                 karlovacka.kaba();
                 break;
 
-            case 9:
+            case 9: //Kreditna Banka Zagreb
                 mMap.clear();
                 LatLng camera_kbz = new LatLng(45.332805, 14.434752);
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera_kbz, 14));
@@ -219,7 +223,7 @@ public class MapsActivity extends AppCompatActivity {
                 kreditnaZg.kbz();
                 break;
 
-            case 10:
+            case 10: //OTP banka
                 mMap.clear();
                 LatLng camera_otp = new LatLng(45.332805, 14.434752);
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera_otp, 14));
@@ -227,7 +231,7 @@ public class MapsActivity extends AppCompatActivity {
                 otpBank.otp();
                 break;
 
-            case 11:
+            case 11: //Partner banka
                 mMap.clear();
                 LatLng camera_par = new LatLng(45.325237, 14.445017);
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera_par, 17));
@@ -247,7 +251,7 @@ public class MapsActivity extends AppCompatActivity {
                 partner.paba();
                 break;
 
-            case 12:
+            case 12: //Podravska banka
                 mMap.clear();
                 LatLng camera_poba = new LatLng(45.332805, 14.434752);
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera_poba, 14));
@@ -255,7 +259,7 @@ public class MapsActivity extends AppCompatActivity {
                 podravska.poba();
                 break;
 
-            case 13:
+            case 13: //Privredna Banka Zagreb
                 mMap.clear();
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(rijeka, 14));
                 Banks privredna = new Banks();
@@ -263,14 +267,14 @@ public class MapsActivity extends AppCompatActivity {
                 break;
 
 
-            case 14:
+            case 14: //Raiffeisen bank
                 mMap.clear();
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(rijeka, 14));
                 Banks raiffeisen = new Banks();
                 raiffeisen.rba();
                 break;
 
-            case 15:
+            case 15: //Sberbank
                 mMap.clear();
                 LatLng camera_sber = new LatLng(45.327424, 14.443966);
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera_sber, 17));
@@ -278,7 +282,7 @@ public class MapsActivity extends AppCompatActivity {
                 sber.sberbank();
                 break;
 
-            case 16:
+            case 16: //Slatinska banka
                 mMap.clear();
                 LatLng camera_slat = new LatLng(45.325371, 14.445601);
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera_slat, 17));
@@ -287,7 +291,7 @@ public class MapsActivity extends AppCompatActivity {
                 break;
 
 
-            case 17:
+            case 17: //Splitska banka
                 mMap.clear();
                 LatLng camera_st = new LatLng(45.327864, 14.447906);
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera_st, 14));
@@ -295,7 +299,7 @@ public class MapsActivity extends AppCompatActivity {
                 split.splitska();
                 break;
 
-            case 18:
+            case 18: //Veneto banka
                 mMap.clear();
                 LatLng camera_ven = new LatLng(45.327231, 14.438525);
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(camera_ven, 17));
@@ -303,7 +307,7 @@ public class MapsActivity extends AppCompatActivity {
                 venetoBanka.veneto();
                 break;
 
-            case 19:
+            case 19: //Zagrebačka banka
                 mMap.clear();
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(rijeka, 14));
                 Banks zagrebacka = new Banks();
@@ -312,6 +316,7 @@ public class MapsActivity extends AppCompatActivity {
         }
     }
 
+    //method for setting title
     @Override
     public void setTitle(CharSequence title) {
         mTitle = title;
@@ -352,6 +357,7 @@ public class MapsActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //If location services are disabled, this AlertDialog will pop up
     private void location() {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Location services disabled");
@@ -373,6 +379,7 @@ public class MapsActivity extends AppCompatActivity {
         dialog.show();
     }
 
+    //Method for checking connectivity
     public void checkConnectivity() {
         if (isNetworkAvailable()) {
             setUpMapIfNeeded();

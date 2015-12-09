@@ -15,6 +15,8 @@ public class AppDelegate extends android.app.Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        //Initialize Parse services
         Parse.initialize(this, "9PRc2dDa2Ld94x68yuCulqWQIaMO1768dbS8SFXU", "nAz94MTAVp9FRNmjUVYsfQAvdWqRhQTVw8H0SHoZ");
         ParseAnonymousUtils.logIn(new LogInCallback() {
             @Override
