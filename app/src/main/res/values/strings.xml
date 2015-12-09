@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Find My ATM</string>
+    <string name="title_activity_maps">Find My ATM</string>
+    <string-array name="banks_array">
+        <item>Banco Popolare</item>
+        <item>BKS banka</item>
+        <item>Croatia banka</item>
+        <item>Erste banka</item>
+        <item>Hrvatska Poštanska Banka</item>
+        <item>Hypo Alpe Adria banka</item>
+        <item>IMEX banka</item>
+        <item>Istarska Kreditna Banka</item>
+        <item>Karlovačka banka</item>
+        <item>Kreditna banka Zagreb</item>
+        <item>OTP banka</item>
+        <item>Partner banka</item>
+        <item>Podravska banka</item>
+        <item>Privredna Banka Zagreb</item>
+        <item>Raiffeisen banka</item>
+        <item>Sberbank</item>
+        <item>Slatinska banka</item>
+        <item>Splitska banka</item>
+        <item>Veneto banka</item>
+        <item>Zagrebačka banka</item>
+    </string-array>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="message">Please choose a bank from a menu.</string>
+    <string name="bancoPopolare_alert">Members of Banco Popolare can withdraw money from all OTP ATMs with no fee.</string>
+
+    <string name="imex_alert">Members of IMEX bank can withdraw money with no fee from MBU or MBNet ATMs of: \nBKS, \nCroatia banka, \nErste bank,
+    \nIstarska Kreditna Banka, \nKarlovačka banka, \nKreditna banka Zagreb, \nPartner banka, \nPodravska banka, \nSberbank, \nSlatinska banka, \nVeneto banka.</string>
+
+    <string name="paba_alert">Members of Partner bank can withdraw money with no fee from all ATMs in MBNet system owned by Croatian banks.</string>
+
+    <string name="about_app">Dear user,\n\ncurrently, this application helps you find ATMs only in Rijeka.\nHopefully, it
+    will expand to more cities of Croatia. If you have any questions, comments or suggestions, leave a comment on Playstore or contact us on info@jamaco-sw.com.
+    \n\nThanks for using Find my ATM!
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
