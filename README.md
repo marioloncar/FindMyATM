@@ -5,5 +5,8 @@ It uses Google Maps Android API. It show ATM locations of more than 20 banks in 
 ## Motivation
 
 This was my very first Android application.
+It contains basic implementation of navigation drawer, Google Maps API, Parse core and Parse analytics.
 
-This app contains basic implementation of navigation drawer, Google Maps API, Parse core and Parse analytics.
+## Screenshots
+
+![](screenshots/navigation_drawer.png?raw=true)
