@@ -9,7 +9,7 @@ It contains basic implementation of navigation drawer, Google Maps API, Parse co
 
 ## Screenshots
 
-<img src="https://github.com/marioloncar/FindMyATM/blob/master/screenshots/markers.png" width="180" height="300">
+<img src="https://github.com/marioloncar/FindMyATM/blob/master/screenshots/navigation_drawer.png" width="180" height="300">
 <img src="https://github.com/marioloncar/FindMyATM/blob/master/screenshots/markers.png" width="180" height="300">
 <img src="https://github.com/marioloncar/FindMyATM/blob/master/screenshots/terrains.png" width="180" height="300">
 
