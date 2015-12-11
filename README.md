@@ -9,4 +9,6 @@ It contains basic implementation of navigation drawer, Google Maps API, Parse co
 
 ## Screenshots
 
-![](screenshots/navigation_drawer.png?raw=true)
+![navDrawer](screenshots/navigation_drawer.png?raw=true)
+![markers](screenshots/markers.png?raw=true)
+![terrains](screenshots/terrains.png?raw=true)
