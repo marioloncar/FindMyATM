@@ -9,6 +9,5 @@ It contains basic implementation of navigation drawer, Google Maps API, Parse co
 
 ## Screenshots
 
-![navDrawer](screenshots/navigation_drawer.png?raw=true)
-![markers](screenshots/markers.png?raw=true)
-![terrains](screenshots/terrains.png?raw=true)
+<img src="https://github.com/marioloncar/FindMyATM/screenshots/navigation_drawer.png" width="180" height="300">
+
