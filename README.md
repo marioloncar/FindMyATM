@@ -10,11 +10,11 @@ This was my very first Android application.
 It contains basic implementation of navigation drawer, Google Maps API, Parse core and Parse analytics.
 
 ## Screenshots
-
+<p align="center">
 <img src="https://github.com/marioloncar/FindMyATM/blob/master/screenshots/navigation_drawer.png" width="190" height="320">
 <img src="https://github.com/marioloncar/FindMyATM/blob/master/screenshots/markers.png" width="190" height="320">
 <img src="https://github.com/marioloncar/FindMyATM/blob/master/screenshots/terrains.png" width="190" height="320">
 <img src="https://github.com/marioloncar/FindMyATM/blob/master/screenshots/location_alert.png" width="190" height="320">
 <img src="https://github.com/marioloncar/FindMyATM/blob/master/screenshots/connection_alert.png" width="190" height="320">
 <img src="https://github.com/marioloncar/FindMyATM/blob/master/screenshots/hint.png" width="190" height="320">
-
+</p>
