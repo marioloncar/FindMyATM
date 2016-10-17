@@ -23,3 +23,6 @@ It contains basic implementation of navigation drawer, Google Maps API, Parse co
 <img src="https://github.com/marioloncar/FindMyATM/blob/master/screenshots/connection_alert.png" width="190" height="320">
 <img src="https://github.com/marioloncar/FindMyATM/blob/master/screenshots/hint.png" width="190" height="320">
 </p>
+
+##IMPORTANT
+App does not work anymore because Parse service is retired.
